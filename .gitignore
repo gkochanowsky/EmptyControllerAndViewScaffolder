@@ -1,3 +1,5 @@
 artifacts/**
 **/obj/**
 **/bin/**
+.vs/**
+.vscode/**

@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmptyControllerAndViewScaffolder", "EmptyControllerAndViewScaffolder\EmptyControllerAndViewScaffolder.csproj", "{E82EBC00-4901-42B6-ACBF-278A0F86F3A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleTestApp", "SampleTestApp\SampleTestApp.csproj", "{3F4DD46C-F9EC-4EA9-84B0-844D6B1491EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,18 @@ Global
 		{E82EBC00-4901-42B6-ACBF-278A0F86F3A5}.Release|x64.Build.0 = Release|x64
 		{E82EBC00-4901-42B6-ACBF-278A0F86F3A5}.Release|x86.ActiveCfg = Release|x86
 		{E82EBC00-4901-42B6-ACBF-278A0F86F3A5}.Release|x86.Build.0 = Release|x86
+		{3F4DD46C-F9EC-4EA9-84B0-844D6B1491EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F4DD46C-F9EC-4EA9-84B0-844D6B1491EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F4DD46C-F9EC-4EA9-84B0-844D6B1491EE}.Debug|x64.ActiveCfg = Debug|x64
+		{3F4DD46C-F9EC-4EA9-84B0-844D6B1491EE}.Debug|x64.Build.0 = Debug|x64
+		{3F4DD46C-F9EC-4EA9-84B0-844D6B1491EE}.Debug|x86.ActiveCfg = Debug|x86
+		{3F4DD46C-F9EC-4EA9-84B0-844D6B1491EE}.Debug|x86.Build.0 = Debug|x86
+		{3F4DD46C-F9EC-4EA9-84B0-844D6B1491EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F4DD46C-F9EC-4EA9-84B0-844D6B1491EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F4DD46C-F9EC-4EA9-84B0-844D6B1491EE}.Release|x64.ActiveCfg = Release|x64
+		{3F4DD46C-F9EC-4EA9-84B0-844D6B1491EE}.Release|x64.Build.0 = Release|x64
+		{3F4DD46C-F9EC-4EA9-84B0-844D6B1491EE}.Release|x86.ActiveCfg = Release|x86
+		{3F4DD46C-F9EC-4EA9-84B0-844D6B1491EE}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,8 +13,11 @@
     <None Include="Templates\**\*" Pack="true" PackagePath="Templates\" />
   </ItemGroup>
 
+  <!-- Generate a versionSuffix automatically based on UTC time-->
   <PropertyGroup>
-    <BuildNumber>$([System.DateTime]::Now)</BuildNumber>
+    <BuildNumber>$([System.DateTime]::UtcNow.Ticks)</BuildNumber>
+    <BuildNumber>$([System.TimeSpan]::FromTicks($(BuildNumber)).TotalSeconds)</BuildNumber>
+    <BuildNumber>$(BuildNumber.Substring(0, $(BuildNumber.IndexOf('.'))))</BuildNumber>
     <VersionSuffix Condition="'$(BuildFinalPackages)' == ''" >alpha</VersionSuffix>
     <VersionSuffix Condition="'$(VersionSuffix)'!='' AND '$(BuildNumber)' != ''">$(VersionSuffix)-$(BuildNumber)</VersionSuffix>
   </PropertyGroup>

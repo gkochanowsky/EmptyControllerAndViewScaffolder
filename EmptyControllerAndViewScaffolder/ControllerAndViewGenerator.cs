@@ -68,7 +68,7 @@ namespace EmptyControllerAndViewScaffolder
             };
 
             var outputPaths = ValidateAndGetOutputPath(model);
-
+            while (!System.Diagnostics.Debugger.IsAttached) {}
             await _codeGeneratorActionsService.AddFileFromTemplateAsync(outputPaths.ControllerPath, ControllerTemplateName, TemplateFolders, controllerTemplateModel);
             _logger.LogMessage("Added Controller : " + outputPaths.ControllerPath.Substring(_applicationInfo.ApplicationBasePath.Length));
             await _codeGeneratorActionsService.AddFileFromTemplateAsync(outputPaths.ViewPath, ViewTemplateName, TemplateFolders, viewTemplateModel);
@@ -135,7 +135,7 @@ namespace EmptyControllerAndViewScaffolder
                 return TemplateFoldersUtilities.GetTemplateFolders(
                     containingProject: this.GetType().GetTypeInfo().Assembly.GetName().Name,
                     applicationBasePath: _applicationInfo.ApplicationBasePath,
-                    baseFolders: new[] { "ControllerGenerator", "ViewGenerator" },
+                    baseFolders: new[] { "Controllers", "Views" },
                     projectContext: _projectContext);
             }
         }
