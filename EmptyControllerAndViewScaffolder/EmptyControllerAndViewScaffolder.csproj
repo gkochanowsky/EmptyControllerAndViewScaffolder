@@ -21,4 +21,12 @@
     <VersionSuffix Condition="'$(BuildFinalPackages)' == ''" >alpha</VersionSuffix>
     <VersionSuffix Condition="'$(VersionSuffix)'!='' AND '$(BuildNumber)' != ''">$(VersionSuffix)-$(BuildNumber)</VersionSuffix>
   </PropertyGroup>
+  <!-- Packaging information -->
+  <PropertyGroup>
+    <Description>
+    Custom scaffolder to be used with Microsoft.VisualStudio.Web.CodeGeneration.Design.
+    Generates an empty controller and view for an aspnetcore project.
+    </Description>
+    <PackageTags>codegenerator;scaffolding;customscaffolder</PackageTags>
+  </PropertyGroup>
 </Project>

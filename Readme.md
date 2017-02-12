@@ -3,7 +3,7 @@
 This code generator generates an empty controller and an empty view in a single operation.
 
 ### Nuget URL
-`TODO`
+[EmptyControllerAndViewScaffolder](https://www.nuget.org/packages/EmptyControllerAndViewScaffolder/)
 
 ### Steps to build. 
 1. Run `dotnet restore` in the `src\EmptyControllerAndViewScaffolder\` directory.
