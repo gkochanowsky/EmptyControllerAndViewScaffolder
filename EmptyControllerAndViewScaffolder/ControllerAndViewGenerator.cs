@@ -68,7 +68,6 @@ namespace EmptyControllerAndViewScaffolder
             };
 
             var outputPaths = ValidateAndGetOutputPath(model);
-            while (!System.Diagnostics.Debugger.IsAttached) {}
             await _codeGeneratorActionsService.AddFileFromTemplateAsync(outputPaths.ControllerPath, ControllerTemplateName, TemplateFolders, controllerTemplateModel);
             _logger.LogMessage("Added Controller : " + outputPaths.ControllerPath.Substring(_applicationInfo.ApplicationBasePath.Length));
             await _codeGeneratorActionsService.AddFileFromTemplateAsync(outputPaths.ViewPath, ViewTemplateName, TemplateFolders, viewTemplateModel);
